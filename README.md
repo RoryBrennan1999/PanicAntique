@@ -18,15 +18,15 @@ Included are four test files to test operations:
 - patch_test_2.json
 
 Test commands include (I suggest using these curl commands from a Linux terminal such as WSL):
-curl -i http://127.0.0.1:5000/sensors
-curl -i http://127.0.0.1:5000/sensors -X POST -H 'Content-Type: application/json' --data @new_sensor.json
-curl -i http://127.0.0.1:5000/sensors -X POST -H 'Content-Type: application/json' --data @bad_sensor.json
-curl -i http://127.0.0.1:5000/sensors/sensor2
-curl http://127.0.0.1:5000/sensors/sensor1 -d "city=Dublin"  -X PATCH -v
-curl http://127.0.0.1:5000/sensors/sensor1 -d "country=Ireland"  -X PATCH -v
-curl http://127.0.0.1:5000/sensors/sensor1 -d @patch_test_1.json -X PATCH -H "Content-Type: application/json"
-curl http://127.0.0.1:5000/sensors/sensor1 -d @patch_test_2.json -X PATCH -H "Content-Type: application/json"
-curl -i http://127.0.0.1:5000/sensors/sensor1 -X DELETE -v
-curl -i http://127.0.0.1:5000/sensors/sensor2/ave/7
-curl -i http://127.0.0.1:5000/sensors/sensor2/ave/30
-curl -i http://127.0.0.1:5000/sensors/sensor2/ave/1
+- curl -i http://127.0.0.1:5000/sensors
+- curl -i http://127.0.0.1:5000/sensors -X POST -H 'Content-Type: application/json' --data @new_sensor.json
+- curl -i http://127.0.0.1:5000/sensors -X POST -H 'Content-Type: application/json' --data @bad_sensor.json
+- curl -i http://127.0.0.1:5000/sensors/sensor2
+- curl http://127.0.0.1:5000/sensors/sensor1 -d "city=Dublin"  -X PATCH -v
+- curl http://127.0.0.1:5000/sensors/sensor1 -d "country=Ireland"  -X PATCH -v
+- curl http://127.0.0.1:5000/sensors/sensor1 -d @patch_test_1.json -X PATCH -H "Content-Type: application/json"
+- curl http://127.0.0.1:5000/sensors/sensor1 -d @patch_test_2.json -X PATCH -H "Content-Type: application/json"
+- curl -i http://127.0.0.1:5000/sensors/sensor1 -X DELETE -v
+- curl -i http://127.0.0.1:5000/sensors/sensor2/ave/7
+- curl -i http://127.0.0.1:5000/sensors/sensor2/ave/30
+- curl -i http://127.0.0.1:5000/sensors/sensor2/ave/1
