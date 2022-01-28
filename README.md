@@ -1,8 +1,8 @@
-Flask-RESTful App written in Python
+# Flask-RESTful App written in Python
 
-Supporting Libraries: flask, flask-restful, random
+## Supporting Libraries: flask, flask-restful, random
 
-Operation is as follows:
+### Operation is as follows:
 - Allows registering of sensors to REST API (has initially two sensors)
 - Sensor data display host country, city and previous temperature, humidity and wind speed data for previous 30 days (stored in JSON)
 - Supports patching and deleting of existing data
@@ -11,13 +11,13 @@ Operation is as follows:
 - Input validation when posting and patching
 - Error handling (E.g sensor ID doesnt exist)
 
-Included are four test files to test operations:
+### Included are four test files to test operations:
 - bad_sensor.json
 - new_sensor.json
 - patch_test_1.json
 - patch_test_2.json
 
-Test commands include (I suggest using these curl commands from a Linux terminal such as WSL):
+### Test commands include (I suggest using these curl commands from a Linux terminal such as WSL):
 - curl -i http://127.0.0.1:5000/sensors
 - curl -i http://127.0.0.1:5000/sensors -X POST -H 'Content-Type: application/json' --data @new_sensor.json
 - curl -i http://127.0.0.1:5000/sensors -X POST -H 'Content-Type: application/json' --data @bad_sensor.json
