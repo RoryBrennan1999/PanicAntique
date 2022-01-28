@@ -31,4 +31,4 @@
 - curl -i http://127.0.0.1:5000/sensors/sensor2/ave/30
 - curl -i http://127.0.0.1:5000/sensors/sensor2/ave/1
 
-### Run Command: python api.py
+### Run Command: python app.py
